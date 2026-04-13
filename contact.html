@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact - MyReviewSite</title>
+    <link rel="stylesheet" href="project.css">
+</head>
+
+<body>
+
+
+    <header class="site-header">
+        <h1>MyReviewSite</h1>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="favorites.html">Top Picks</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+
+        <main class="main-content">
+            <h2>Contact Me</h2>
+            
+            <p>Have a question, suggestion, or something else? Feel free to reach out!</p>
+
+            <section class="contact-form-section">
+                <form action="https://webdevbasics.net/scripts/demo.php" method="post" class="contact-form">
+                    
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="8" required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </section>
+
+            <!-- Alternative Contact Info -->
+            <section class="contact-info">
+                <h3>Other Ways to Reach Us</h3>
+                <p><strong>Email:</strong> louden@gmail.com</p>
+                <p><strong>Follow Us:</strong> Twitter / Instagram / Discord (coming soon)</p>
+            </section>
+        </main>
+
+        
+        <aside class="sidebar">
+            <h3>Why Contact Me?</h3>
+            <ul>
+                <li>Report a broken link</li>
+                <li>Suggest a game for review</li>
+                <li>Ask a question about a review</li>
+                <li>Other</li>
+            </ul>
+
+            <h3>Response Time</h3>
+            <p>I usually try to reply within 1 to 3 business days.</p>
+
+            <h3>Note</h3>
+            <p>This is a student project website, and the form uses a demo script for testing.</p>
+        </aside>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <p>Copyright &copy; 2026 MyReviewSite | Game Reviews by Louden Hassinger</p>
+    </footer>
+
+    </body>
+</html>
