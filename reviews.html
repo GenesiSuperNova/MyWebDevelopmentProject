@@ -1,15 +1,145 @@
-<link rel="stylesheet" href="project.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Browse all game reviews on MyReviewSite. Honest opinions on action, RPG, multiplayer, and trending games.">
+    <title>All Reviews - MyReviewSite</title>
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
 
-<h2> All Reviews</h2>
-<section class ="categories">
+    <header class="site-header">
+        <h1>MyReviewSite</h1>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="favorites.html">Top Picks</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <div class="title-wrapper">
+    <div class="container">
+        <main class="main-content">
+            <h2>All Game Reviews</h2>
+            
+            <div class="category-filter">
+                <button class="category-btn active" onclick="filterCategory('all')">All</button>
+                <button class="category-btn" onclick="filterCategory('action')">Action / Adventure</button>
+                <button class="category-btn" onclick="filterCategory('rpg')">RPG</button>
+                <button class="category-btn" onclick="filterCategory('multiplayer')">Multiplayer</button>
+            </div>
 
-    <h3>Categories</h3>
+            <div class="review-grid" id="reviewContainer">
+                
+                <!-- Game 1 -->
+                <article class="game-card" data-category="action">
+                    <div class="game-image">
+                        <a href="elden-ring-review.html">
+                            <img src="" alt="Elden Ring gameplay">
+                        </a>
+                    </div>
+                    <div class="game-info">
+                        <h3><a href="elden-ring-review.html">Elden Ring</a></h3>
+                        <p class="review-text">FromSoftware's masterpiece delivers one of the best open-world experiences ever made. Brutal, beautiful, and unforgettable.</p>
+                        <div class="rank"><strong>Rank:</strong> 9.6 / 10</div>
+                        <small>Action • Adventure • Open World</small>
+                    </div>
+                </article>
+
+                <!-- Game 2 -->
+                <article class="game-card" data-category="rpg">
+                    <div class="game-image">
+                        <a href="elden-ring-review.html">
+                            <img src="" alt="Baldur's Gate 3">
+                        </a>
+                    </div>
+                    <div class="game-info">
+                        <h3><a href="#">Baldur's Gate 3</a></h3>
+                        <p class="review-text">Larian Studios knocked it out of the park with this D&amp;D masterpiece. Deep storytelling and incredible player freedom.</p>
+                        <div class="rank"><strong>Rank:</strong> 9.4 / 10</div>
+                        <small>RPG • Story-Rich</small>
+                    </div>
+                </article>
+
+                <!-- Game 3 -->
+                <article class="game-card" data-category="multiplayer">
+                    <div class="game-image">
+                        <img src="" alt="Helldivers 2">
+                    </div>
+                    <div class="game-info">
+                        <h3>Helldivers 2</h3>
+                        <p class="review-text">Chaotic co-op fun at its finest. Spreading managed democracy has never been more entertaining.</p>
+                        <div class="rank"><strong>Rank:</strong> 8.8 / 10</div>
+                        <small>Multiplayer • Shooter</small>
+                    </div>
+                </article>
+
+                <!-- Game 4 -->
+                <article class="game-card" data-category="action">
+                    <div class="game-image">
+                        <img src="" alt="Black Myth Wukong">
+                    </div>
+                    <div class="game-info">
+                        <h3>Black Myth: Wukong</h3>
+                        <p class="review-text">A stunning Souls-like action game inspired by Journey to the West. Excellent combat and visuals.</p>
+                        <div class="rank"><strong>Rank:</strong> 8.9 / 10</div>
+                        <small>Action • Adventure</small>
+                    </div>
+                </article>
+            </div>
+        </main>
+
+        <aside class="sidebar">
+            <h3>Review Categories</h3>
+            <ul>
+                <li>Action &amp; Adventure</li>
+                <li>RPGs &amp; Story Games</li>
+                <li>Multiplayer / Co-op</li>
+                <li>Indie Gems</li>
+                <li>AAA Blockbusters</li>
+            </ul>
+
+            <h3>Latest Reviews</h3>
+            <ul>
+                <li>Elden Ring (9.6)</li>
+                <li>Baldur's Gate 3 (9.4)</li>
+                <li>Helldivers 2 (8.8)</li>
+            </ul>
+
+            <h3>Want Your Game Reviewed?</h3>
+            <p><a href="contact.html">Send me a message</a> with suggestions!</p>
+        </aside>
     </div>
-        <ul>
-            <li>Favorites</li>
-            <li>Liked</li>
-        </ul>
 
-</section>
+    <footer class="site-footer">
+        <p>Copyright &copy; 2026 MyReviewSite | Honest Game Reviews by GenesisSuperNova</p>
+    </footer>
+
+    <script>
+        function filterCategory(category) {
+            const cards = document.querySelectorAll('.game-card');
+            const buttons = document.querySelectorAll('.category-btn');
+            
+            buttons.forEach(btn => {
+                if ((category === 'all' && btn.textContent === 'All') || 
+                    btn.textContent.toLowerCase().includes(category)) {
+                    btn.classList.add('active');
+                } else {
+                    btn.classList.remove('active');
+                }
+            });
+            
+            cards.forEach(card => {
+                if (category === 'all') {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = card.dataset.category === category ? 'block' : 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>
