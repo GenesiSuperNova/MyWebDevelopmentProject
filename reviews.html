@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Browse all game reviews on MyReviewSite. Honest opinions on action, RPG, multiplayer, and trending games.">
+    <meta name="description" content="Browse all game reviews on MyReviewSite.">
     <title>All Reviews - MyReviewSite</title>
     <link rel="stylesheet" href="project.css">
 </head>
@@ -27,66 +27,71 @@
             
             <div class="category-filter">
                 <button class="category-btn active" onclick="filterCategory('all')">All</button>
-                <button class="category-btn" onclick="filterCategory('action')">Action / Adventure</button>
-                <button class="category-btn" onclick="filterCategory('rpg')">RPG</button>
-                <button class="category-btn" onclick="filterCategory('multiplayer')">Multiplayer</button>
+                <button class="category-btn" onclick="filterCategory('horror')">Horror</button>
+                <button class="category-btn" onclick="filterCategory('party')">Party / Multiplayer</button>
+                <button class="category-btn" onclick="filterCategory('rhythm')">Rhythm / Platformer</button>
+                <button class="category-btn" onclick="filterCategory('simulation')">Flight / Simulation</button>
             </div>
 
             <div class="review-grid" id="reviewContainer">
                 
-                <!-- Game 1 -->
-                <article class="game-card" data-category="action">
+                <!-- Captured 2 -->
+                <article class="game-card" data-category="horror">
                     <div class="game-image">
-                        <a href="elden-ring-review.html">
-                            <img src="" alt="Elden Ring gameplay">
+                        <a href="captured-2-review.html">
+                            <img src="captured2.jpg" alt="Captured 2">
                         </a>
                     </div>
                     <div class="game-info">
-                        <h3><a href="elden-ring-review.html">Elden Ring</a></h3>
-                        <p class="review-text">FromSoftware's masterpiece delivers one of the best open-world experiences ever made. Brutal, beautiful, and unforgettable.</p>
-                        <div class="rank"><strong>Rank:</strong> 9.6 / 10</div>
-                        <small>Action • Adventure • Open World</small>
+                        <h3><a href="captured-2-review.html">Captured 2</a></h3>
+                        <p class="review-text">A chilling anomaly horror experience where you must document anomalies with your camera and survive deadly entities in an ever-changing nightmare apartment.</p>
+                        <div class="rank"><strong>Rank:</strong> 8.7 / 10</div>
+                        <small>Horror • Psychological Horror </small>
                     </div>
                 </article>
 
-                <!-- Game 2 -->
-                <article class="game-card" data-category="rpg">
+                <!-- Gang Beasts -->
+                <article class="game-card" data-category="party">
                     <div class="game-image">
-                        <a href="elden-ring-review.html">
-                            <img src="" alt="Baldur's Gate 3">
+                        <a href="gang-beasts-review.html">
+                            <img src="GangBeasts.jpg" alt="Gang Beasts">
                         </a>
                     </div>
                     <div class="game-info">
-                        <h3><a href="#">Baldur's Gate 3</a></h3>
-                        <p class="review-text">Larian Studios knocked it out of the park with this D&amp;D masterpiece. Deep storytelling and incredible player freedom.</p>
-                        <div class="rank"><strong>Rank:</strong> 9.4 / 10</div>
-                        <small>RPG • Story-Rich</small>
-                    </div>
-                </article>
-
-                <!-- Game 3 -->
-                <article class="game-card" data-category="multiplayer">
-                    <div class="game-image">
-                        <img src="" alt="Helldivers 2">
-                    </div>
-                    <div class="game-info">
-                        <h3>Helldivers 2</h3>
-                        <p class="review-text">Chaotic co-op fun at its finest. Spreading managed democracy has never been more entertaining.</p>
-                        <div class="rank"><strong>Rank:</strong> 8.8 / 10</div>
-                        <small>Multiplayer • Shooter</small>
-                    </div>
-                </article>
-
-                <!-- Game 4 -->
-                <article class="game-card" data-category="action">
-                    <div class="game-image">
-                        <img src="" alt="Black Myth Wukong">
-                    </div>
-                    <div class="game-info">
-                        <h3>Black Myth: Wukong</h3>
-                        <p class="review-text">A stunning Souls-like action game inspired by Journey to the West. Excellent combat and visuals.</p>
+                        <h3><a href="gang-beasts-review.html">Gang Beasts</a></h3>
+                        <p class="review-text"> A hilarious physics-based multiplayer brawling that has never failed to deliver with a chaotic party experience. </p>
                         <div class="rank"><strong>Rank:</strong> 8.9 / 10</div>
-                        <small>Action • Adventure</small>
+                        <small>Party • Multiplayer </small>
+                    </div>
+                </article>
+
+                <!-- Geometry Dash -->
+                <article class="game-card" data-category="rhythm">
+                    <div class="game-image">
+                        <a href="geometry-dash-review.html">
+                            <img src="GeometryDash.jpg" alt="Geometry Dash">
+                        </a>
+                    </div>
+                    <div class="game-info">
+                        <h3><a href="geometry-dash-review.html">Geometry Dash</a></h3>
+                        <p class="review-text">A simple rhythm-based platformer driven by an incredibly creative community. </p>
+                        <div class="rank"><strong>Rank:</strong> 9.1 / 10</div>
+                        <small>Rhythm • Platformer</small>
+                    </div>
+                </article>
+
+                <!-- Ace Combat 7 -->
+                <article class="game-card" data-category="simulation">
+                    <div class="game-image">
+                        <a href="ace-combat-7-review.html">
+                            <img src="AceCombat7.jpg" alt="Ace Combat 7">
+                        </a>
+                    </div>
+                    <div class="game-info">
+                        <h3><a href="ace-combat-7-review.html">Ace Combat 7: Skies Unknown</a></h3>
+                        <p class="review-text">High-octane aerial dogfighting with stunning visuals and an engaging single-player campaign.</p>
+                        <div class="rank"><strong>Rank:</strong> 8.8 / 10</div>
+                        <small>Flight Simulation • Action</small>
                     </div>
                 </article>
             </div>
@@ -95,27 +100,26 @@
         <aside class="sidebar">
             <h3>Review Categories</h3>
             <ul>
-                <li>Action &amp; Adventure</li>
-                <li>RPGs &amp; Story Games</li>
-                <li>Multiplayer / Co-op</li>
-                <li>Indie Gems</li>
-                <li>AAA Blockbusters</li>
+                <li>Horror &amp; Psychological Horror</li>
+                <li>Party &amp; Multiplayer</li>
+                <li>Rhythm &amp; Platformers</li>
+                <li>Flight &amp; Simulation</li>
             </ul>
 
             <h3>Latest Reviews</h3>
             <ul>
-                <li>Elden Ring (9.6)</li>
-                <li>Baldur's Gate 3 (9.4)</li>
-                <li>Helldivers 2 (8.8)</li>
+                <li>Captured 2 (9.0)</li>
+                <li>Geometry Dash (9.1)</li>
+                <li>Gang Beasts (8.9)</li>
             </ul>
 
             <h3>Want Your Game Reviewed?</h3>
-            <p><a href="contact.html">Send me a message</a> with suggestions!</p>
+            <p><a href="contact.html">Send me a message</a></p>
         </aside>
     </div>
 
     <footer class="site-footer">
-        <p>Copyright &copy; 2026 MyReviewSite | Honest Game Reviews by GenesisSuperNova</p>
+        <p>Copyright &copy; 2026 MyReviewSite | Honest Game Reviews</p>
     </footer>
 
     <script>
@@ -123,12 +127,12 @@
             const cards = document.querySelectorAll('.game-card');
             const buttons = document.querySelectorAll('.category-btn');
             
+            buttons.forEach(btn => btn.classList.remove('active'));
+            
             buttons.forEach(btn => {
                 if ((category === 'all' && btn.textContent === 'All') || 
                     btn.textContent.toLowerCase().includes(category)) {
                     btn.classList.add('active');
-                } else {
-                    btn.classList.remove('active');
                 }
             });
             
